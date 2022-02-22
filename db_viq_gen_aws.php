@@ -1,8 +1,8 @@
 <?php
-$servername = "127.0.0.1";
-$username = "root";
-$password = "";
-$dbname = "verticaliq_generators";
+$servername = "generators.cjckvwev9pmm.us-east-1.rds.amazonaws.com";
+$username = "admin";
+$password = "gSLC8xYfXiGaDim6a2sk";
+$dbname = "generators";
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
