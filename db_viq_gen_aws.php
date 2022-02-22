@@ -11,15 +11,15 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$servername = "generators.cjckvwev9pmm.us-east-1.rds.amazonaws.com";
-$username = "admin";
-$password = "gSLC8xYfXiGaDim6a2sk";
-$dbname = "vertical_guru_production";
+$viq_servername = "generators.cjckvwev9pmm.us-east-1.rds.amazonaws.com";
+$viq_username = "admin";
+$viq_password = "gSLC8xYfXiGaDim6a2sk";
+$viq_dbname = "vertical_guru_production";
 
 // Create connection
-$conn_viq_prod = mysqli_connect($servername, $username, $password, $dbname);
+$viq_conn = mysqli_connect($viq_servername, $viq_username, $viq_password, $viq_dbname);
 // Check connection
-if (!$conn_viq_prod) {
+if (!$viq_conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
