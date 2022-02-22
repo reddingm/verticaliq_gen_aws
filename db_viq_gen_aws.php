@@ -11,6 +11,22 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
+$servername = "generators.cjckvwev9pmm.us-east-1.rds.amazonaws.com";
+$username = "admin";
+$password = "gSLC8xYfXiGaDim6a2sk";
+$dbname = "vertical_guru_production";
+
+// Create connection
+$conn_viq_prod = mysqli_connect($servername, $username, $password, $dbname);
+// Check connection
+if (!$conn_viq_prod) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+
+
+
+
 //census bureau api key matt@viq
 $viq_cb_api_key = 'd62184e651f42ac47cd87e3b7f4bd8aeef681e13';
 
